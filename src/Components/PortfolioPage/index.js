@@ -48,6 +48,18 @@ class PortfolioPage extends React.Component {
       return sixItems;
     }
 
+    const addSixItemsByFilterType = (type) => {
+      const sixItemsByFilterType = [];
+      if (dataArray.length && currentAmountOnPage <= dataArray.length) {
+        for ( let i = 0; i < currentAmountOnPage; i++) {
+          if (dataArray[i].type === type) {
+            sixItems.push(<PPImagesItem key={i} title={dataArray[i].title} keywords={dataArray[i].keywords} alt={dataArray[i].title} src={dataArray[i].image} />);
+          }
+        }
+      }
+      return sixItems;
+    }
+
     return (
       <section className="portfolio-page">
         <div className="portfolio-page__wrapper">
