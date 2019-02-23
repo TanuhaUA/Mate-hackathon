@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import PurpleBackground from './../PurpleBackground';
 import Title from './../Title';
 import './style.scss';
@@ -23,7 +24,7 @@ const AboutUs = () => {
                 nulla nisl, aliquam pretium ipsum. Pellentesque sodales ipsum et
                 enim rutrum adipiscing. Quisque tincidunt mattis sapien,
                 vel posuere.</p>
-              <a className="about-us__learn-more" href="/">Learn more</a>
+              <NavLink className="about-us__learn-more" to="/learn-more">Learn more</NavLink>
             </div>
           </div>
         </div>
