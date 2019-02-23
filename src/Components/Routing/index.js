@@ -4,13 +4,14 @@ import Redirect from 'react-router-dom/es/Redirect';
 import OurSkills from '../OurSkills';
 import AboutUs from '../AboutUs';
 import Page404 from '../Page404';
+import HomePage from '../HomePage';
 
 class Routing extends React.Component {
   render() {
     return (
       <main>
         <Switch>
-          {/*<Route exact path="/" component={HomePage}/>*/}
+          <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={AboutUs}/>
           {/*<Route path="/team" component={OurTeam}/>*/}
           <Route path="/services" component={OurSkills}/>
