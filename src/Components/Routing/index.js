@@ -4,6 +4,7 @@ import Redirect from 'react-router-dom/es/Redirect';
 import OurSkills from '../OurSkills';
 import AboutUs from '../AboutUs';
 import Page404 from '../Page404';
+import PortfolioPage from '../PortfolioPage';
 
 class Routing extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class Routing extends React.Component {
           <Route path="/about" component={AboutUs}/>
           {/*<Route path="/team" component={OurTeam}/>*/}
           <Route path="/services" component={OurSkills}/>
-          {/*<Route path="/portfolio" component={PortfolioPage}/>*/}
+          <Route path="/portfolio" component={PortfolioPage}/>
           {/*<Route path="/blog" component={BlogPage}/>*/}
           {/*<Route path="/contact" component={ContactPage}/>*/}
           <Route path="/404" component={Page404}/>
