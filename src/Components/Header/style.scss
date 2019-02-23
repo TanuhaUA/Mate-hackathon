@@ -33,11 +33,14 @@ $background-color: #ffffff;
   &__item {
     display: inline-block;
     color: $primary-color;
-    transition: all 0.3s ease;
 
-    &:hover {
+    &:hover .menu__anim {
       transform: translateY(-0.5rem);
     }
+  }
+
+  &__anim {
+    transition: all 0.3s ease;
   }
 }
 
