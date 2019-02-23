@@ -6,8 +6,8 @@ import './blogPage.scss'
 class BlogPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    // this.changeState = changeState.bind(this);
+    this.state = {curent: 0};
+    this.changeState = changeState.bind(this);
     // this.changeComponents = changeComponents.bind(this);
   }
   componentDidMount() {    
@@ -28,7 +28,7 @@ class BlogPage extends Component {
     return (
       <div className={'blogPage'}>
         <Percentage statistic={statistic}/>
-        <Posts posts={posts}/>
+        <Posts posts={posts} curentPost={posts[this.state.curent]} changeState={this.changeState}/>
       </div>
     );
   }
@@ -36,3 +36,6 @@ class BlogPage extends Component {
 
 export default BlogPage;
 
+function changeState(value) {
+  this.setState(value);    
+}

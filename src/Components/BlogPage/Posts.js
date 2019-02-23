@@ -1,36 +1,38 @@
 import React, { Component } from "react";
 
-class Posts extends Component {
-  
-  render() {
+const Posts = (props) => {
+  const PostsList = (elem) => {  
     
-    return (
-      <div>
-        {PostsList(this.props.posts)}
-      </div>
-    );
+    if (elem) {
+      return (
+        <div >
+          <img className='blogPage__posts-image'  src={elem.image} alt={elem.author}/> 
+          <h1 >{elem.text}</h1>
+          <h1 className='blogPage__posts-name'>{elem.author}, {elem.source}</h1>
+        </div>
+      )
+    }
   }
-}
+  const changeCurrent = (value) => {
+    props.changeState({curent: value})
+  }
+  
+  const sliderButtons = (post) => {
+    let arr = [];
+    
+    for (let i = 0; i < post.length; i++) {
+      arr.push(<input onClick={changeCurrent.bind(null, i)} name='name' key={i}  type='radio'/>)
+      
+    }
+    
+    return arr;
+  }
 
+  return (
+    <div>
+      {PostsList(props.curentPost)}
+      {sliderButtons(props.posts)}
+    </div>
+  );
+}
 export default Posts;
-
-function PostsList(post) {  
-  const arr = post.map((elem,i) => {    
-    return (
-      <div key={i}>
-        <img className='blogPage__posts-image'  src={elem.image} alt={elem.author}/> 
-        <h1 >{elem.text}</h1>
-        <h1 className='blogPage__posts-name'>{elem.author}, {elem.source}</h1>
-        
-        
-               
-      </div>
-    )
-  })
-  return arr;
-}
-
-// "author": "Lesale Christoper",
-//       "source": "pinterest",
-//       "text": "Fusce dapibus, tellus ac cursus commodo, tortor mauris \ncondimentum. Duis mollis, est non commodo luctus, nisi erat.",
-//       "image": "https://tanuhaua.github.io/datas-file-json/bhagaskara/blog-images/autumn.jpg"
