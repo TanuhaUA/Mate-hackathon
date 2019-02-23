@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import ContactPage from './Components/ContactPage'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ContactPage/>, document.getElementById('root'));

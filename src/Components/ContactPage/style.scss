@@ -1,0 +1,32 @@
+.contact {
+  box-sizing: border-box;
+  display: flex;  
+  width: 1120px;
+  max-width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+
+  &-form {
+    &--name, 
+    &--email,
+    &--message {
+      margin-bottom: 20px;
+    }
+
+    &--control {
+      padding: 10px;
+      border: 0.5px solid #000;
+    }
+    input {
+      &::placeholder {
+        color: #000;
+      }
+      &:focus {
+        &::placeholder {
+          text-indent: 500px;
+          transition: text-indent 1s ease;
+        }
+      }
+    }
+  }
+}
