@@ -6,9 +6,9 @@ class StatisticInformation extends Component {
   render() {
     return (
       (
-      <div>        
+      <div className='blogPage__percentage-item'>        
         <h2>{this.props.percent}</h2>
-        <h2>{this.props.title}</h2>
+        <h2 className='blogPage__percentage-text'>{this.props.title}</h2>
       </div>)
     );
   }

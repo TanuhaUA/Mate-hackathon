@@ -3,7 +3,7 @@ import StatisticInformation from "./StatisticInformation";
 
 class Percentage extends Component {
   render() {
-    return <div>{StatisticList(this.props.statistic)}</div>;
+    return <div className='blogPage__percentage'>{StatisticList(this.props.statistic)}</div>;
   }
 }
 

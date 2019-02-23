@@ -18,10 +18,12 @@ function PostsList(post) {
   const arr = post.map((elem,i) => {    
     return (
       <div key={i}>
-        <h1 >{elem.author}</h1>
-        <h1 >{elem.source}</h1>
+        <img className='blogPage__posts-image'  src={elem.image} alt={elem.author}/> 
         <h1 >{elem.text}</h1>
-        <img  src={elem.image} alt={elem.author}/>        
+        <h1 className='blogPage__posts-name'>{elem.author}, {elem.source}</h1>
+        
+        
+               
       </div>
     )
   })

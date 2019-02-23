@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Percentage from './Percentage';
 import Posts from './Posts';
+import './blogPage.scss'
 
 class BlogPage extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class BlogPage extends Component {
     const {statistic = {}, posts = []} = this.state;
     
     return (
-      <div>
+      <div className={'blogPage'}>
         <Percentage statistic={statistic}/>
         <Posts posts={posts}/>
       </div>
