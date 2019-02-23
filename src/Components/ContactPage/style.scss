@@ -135,16 +135,26 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .wrapper {
-    flex-direction: column;
-  }
-
   .contact {
+    &-block {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
     &-form {
       margin: 10px auto;
+      width: 100%;
+      text-align: center;
     }
+
     &-info {
       margin: 10px auto;
+      width: 100%;
+      text-align: center;
+      
+      &__text {
+        text-align: justify;
+      }
     }
   }
 }
