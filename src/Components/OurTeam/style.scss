@@ -1,4 +1,4 @@
-@import '../../Styles/main.scss';
+@import '../../Styles/var';
 
 .wrap {
   text-align: center;
@@ -27,7 +27,6 @@
 
   &__inner {
     overflow: hidden;
-    border: 1px solid black;
     max-width: 1130px;
 
     @media screen and (min-width: 1130px) {

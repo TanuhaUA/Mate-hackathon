@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SliderInner from './SliderInner';
+import Title from '../Title'
 import './style.scss';
 
 export class OurTeam extends Component {
@@ -49,9 +50,8 @@ export class OurTeam extends Component {
     return (
       <section id="OurTeam">
         <div className="wrap">
-          <h2>
-            Our <span>team</span>
-          </h2>
+
+        <Title title="Our" titlePurple="team" />
 
           <div className="slider">
             <div className="slider__controls">
