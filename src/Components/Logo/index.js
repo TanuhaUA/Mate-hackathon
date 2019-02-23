@@ -7,7 +7,7 @@ class Logo extends React.Component {
       <span className="logo" style={{ fontSize: this.props.fontSize }}>
         <span style={{ color: this.props.color }}>Bhagas</span>
         <span className="logo__item logo__item--secondary">kara</span>
-        <span>.</span>
+        <span style={{ color: this.props.color }}>.</span>
       </span>
     );
   }

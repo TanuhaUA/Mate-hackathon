@@ -1,10 +1,22 @@
+@import '../../Styles/var';
+
 .home {
-  height: 100vh;
+  position: relative;
+  height: auto;
   padding: 5rem 0;
   background-image: url(./img/home.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  //&__wrapper {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  background-color: rgba(#000, 0.8)
+  //
+  //}
 
   &__content {
     margin: auto;
@@ -38,7 +50,7 @@
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
-    height: 28rem;
+    min-height: 28rem;
   }
 
   &__icon {
@@ -48,6 +60,13 @@
     height: 13rem;
     border: 3px solid #fff;
     border-radius: 50%;
+    transition: all .3s;
+
+    &:hover {
+      background-color: rgba($secondary-color, 0.9);
+      border: 3px solid transparent;
+
+    }
 
     &:nth-child(3),
     &:nth-child(4) {
