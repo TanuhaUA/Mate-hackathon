@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Redirect from 'react-router-dom/es/Redirect';
+import HomePage from '../HomePage';
 import OurSkills from '../OurSkills';
 import AboutUs from '../AboutUs';
 import Page404 from '../Page404';
@@ -12,6 +13,7 @@ class Routing extends React.Component {
     return (
       <main>
         <Switch>
+          <Route exact path="/" component={HomePage}/>
           {/*<Route exact path="/" component={HomePage}/>*/}
           <Route path="/about" component={AboutUs}/>
           {/*<Route path="/team" component={OurTeam}/>*/}
