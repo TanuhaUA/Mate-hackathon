@@ -14,7 +14,6 @@ class Routing extends React.Component {
       <main>
         <Switch>
           <Route exact path="/" component={HomePage}/>
-          {/*<Route exact path="/" component={HomePage}/>*/}
           <Route path="/about" component={AboutUs}/>
           {/*<Route path="/team" component={OurTeam}/>*/}
           <Route path="/services" component={OurSkills}/>
