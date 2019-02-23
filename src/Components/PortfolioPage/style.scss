@@ -1,0 +1,12 @@
+.portfolio-page {
+  box-sizing: border-box;
+  &__tabs {
+    padding: 0;
+    margin: 70px auto 0;
+    width: 412px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+}
