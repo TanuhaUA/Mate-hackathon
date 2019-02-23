@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContactPage from './Components/ContactPage'
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(<ContactPage/>, document.getElementById('root'));
+ReactDOM.render((
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>
+), document.getElementById('root'));
