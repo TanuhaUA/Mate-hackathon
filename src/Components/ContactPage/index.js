@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import App from './style.scss';
+import React from 'react';
+import './style.scss';
 import Logo from '../Logo';
 import Title from '../Title';
 
@@ -27,6 +27,8 @@ class ContactPage extends React.Component {
   switch(fieldName) {
     case 'email':
       emailValid = value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i);
+    break;
+    default:
     break;
   }
 
