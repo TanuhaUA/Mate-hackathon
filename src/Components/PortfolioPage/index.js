@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.scss';
 import PPImagesItem from '../PPImagesItem';
+import Title from '../Title';
 
 class PortfolioPage extends React.Component {
   constructor(props) {
@@ -13,21 +14,12 @@ class PortfolioPage extends React.Component {
   }
 
   componentDidMount() {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://tanuhaua.github.io/datas-file-json/bhagaskara/portfolio.json', true); // замените адрес
-    xhr.send();
-    this.setState({ isLoading: true })
-
-    xhr.onload = () => {
-      if (xhr.status !== 200) {
-        console.log(xhr.status + ': ' + xhr.statusText );
-      } else {
-        this.setState({
-          data: JSON.parse(xhr.responseText),
+    fetch('https://tanuhaua.github.io/datas-file-json/bhagaskara/portfolio.json')
+    .then(response => response.json().then(response => this.setState({
+          data: response,
           isLoading: false,
         })
-      }
-    }
+    ))
   }
 
   handleClick() {
@@ -59,6 +51,7 @@ class PortfolioPage extends React.Component {
     return (
       <section className="portfolio-page">
         <div className="portfolio-page__wrapper">
+        <Title title="Our" titlePurple="portfolio" />
           <ul className="portfolio-page__tabs">
             <li className="portfolio-page__tabs-item portfolio-page__tabs-item--active">All</li>
             {tabsNameArray.map((tabsNameArrayItem, i) => {

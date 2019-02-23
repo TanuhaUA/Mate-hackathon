@@ -1,13 +1,14 @@
-@import '../../Styles/main.scss';
+@import '../../Styles/var';
 
 .portfolio-page {
-    
   padding: 15px 5px;
     
   &__wrapper {
     width: 1130px;
     max-width: 100%;
     margin: 0 auto;
+    font: $primary-font;
+    text-align: center;
   }
 
   &__tabs {
