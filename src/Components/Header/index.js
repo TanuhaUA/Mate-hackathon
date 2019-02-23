@@ -9,7 +9,7 @@ class Header extends React.Component {
       <header className="header">
         <div className="content">
         <span className="content__item logo">
-          <Logo color="#676767' fontSize='30px"/>
+          <Logo color="#676767" fontSize="30px"/>
         </span>
           <nav className="content__item menu">
             <ul className="menu__items">
