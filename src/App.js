@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PurpleBackground from './Components/PurpleBackground/';
+import './Styles/main.scss'
+import OurSkills from "./Components/OurSkills";
 
 class App extends Component {
   constructor() {
@@ -23,6 +25,7 @@ class App extends Component {
           purpleBackgroundParInner={this.state.purpleBackgroundParInnerOurSkills}
           purpleBackgroundHexagonInner={this.state.purpleBackgroundHexagonBubble}
         />
+        <OurSkills />
       </div>
     );
   }
