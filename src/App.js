@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Index from "./Components/OurSkills/index";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Mate hackathon
+        <Index />
       </div>
     );
   }
