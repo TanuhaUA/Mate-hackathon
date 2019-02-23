@@ -3,9 +3,11 @@ import sizeMe from 'react-sizeme';
 import './style.scss';
 
 export class SliderInner extends Component {
+  state = {
+    moveOn: 0
+  }
+
   render() {
-    // console.log(this.props.size.width);
-    console.log(this.props.size.width * this.props.countClicks);
     let showItemFromTeamList = () => {
       let arr = this.props.teamList,
           result = [];
@@ -30,19 +32,12 @@ export class SliderInner extends Component {
       }
       return result;
     };
-    
-    let moveOn = this.props.size.width * this.props.countClicks;
 
-    // let countClicks = this.props.countClicks;
-    
-    // if (this.props.size.width * countClicks > 0) {
-    //   countClicks = 0;
-    // } 
-    // let moveOn = this.props.size.width * countClicks;
-    // console.log(moveOn);
+    this.state.moveOn = this.props.size.width * this.props.countClicks;
+
     return (
       <div className="slider__inner" >
-        <div className="slider__slides" style={{ transform: `translateX(${ moveOn }px)` }}>
+        <div className="slider__slides" style={{ transform: `translateX(${ this.state.moveOn }px)` }}>
           { showItemFromTeamList() }
         </div>
       </div>
