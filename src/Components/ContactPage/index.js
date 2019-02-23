@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import App from './style.scss';
+import React from 'react';
+import './style.scss';
 import Logo from '../Logo';
 import Title from '../Title';
 
@@ -18,17 +18,19 @@ class ContactPage extends React.Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({[name]: value}, () => { this.validateField(name, value)});
-  }
+  };
 
   validateField(fieldName, value) {
     const fieldValidationErrors = this.state.formErrors;
     let emailValid = this.state.emailValid;
     
-  switch(fieldName) {
-    case 'email':
-      emailValid = value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i);
-    break;
-  }
+    switch(fieldName) {
+      case 'email':
+        emailValid = value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i);
+      break;
+      default:
+      break;
+    }
 
     this.setState({formErrors: fieldValidationErrors,
       emailValid: emailValid,
