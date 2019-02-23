@@ -7,8 +7,7 @@ class BlogPage extends Component {
   constructor(props) {
     super(props);
     this.state = {curent: 0};
-    this.changeState = changeState.bind(this);
-    // this.changeComponents = changeComponents.bind(this);
+    this.changeState = changeState.bind(this);    
   }
   componentDidMount() {    
     fetch('https://tanuhaua.github.io/datas-file-json/bhagaskara/blog.json')
