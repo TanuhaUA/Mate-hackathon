@@ -1,22 +1,16 @@
-@import './../../Styles/var';
-//@import './../../Styles/fonts';
-@font-face {
-  font-family: existence;
-  src: url('../../Styles/Existence-Light.otf');
-}
+@import './../../Styles/main';
 
 .title {
   position: relative;
   margin: 0;
-  padding: 40px 50px;
+  padding: 4rem 5rem;
   display: inline-block;
-  font-family: existence, sans-serif;
-  font-size: 48px;
+  font: $title-font;
   font-weight: lighter;
   color: $primary-color;
 
   &--purple {
-    color: $secondary-second;
+    color: $secondary-color;
   }
 
   &::before, &::after {
@@ -25,7 +19,7 @@
     height: 30px;
     display: block;
     content: '';
-    border: solid $secondary-second;
+    border: solid $secondary-color;
   }
 
   &::before {
