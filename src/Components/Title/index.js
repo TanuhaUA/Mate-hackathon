@@ -4,7 +4,7 @@ import "./style.scss";
 class Title extends Component {
   render() {
     return (
-      <h2 className="title">Our <span className="title--purple">skills</span></h2>
+      <h2 className="title">{this.props.title} <span className="title--purple">{this.props.titlePurple}</span></h2>
     )
   }
 }

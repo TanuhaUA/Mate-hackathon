@@ -1,4 +1,4 @@
-@import '../../Styles/main';
+@import '../../Styles/var';
 
 .purple-background {
   display: flex;
@@ -8,8 +8,9 @@
   background-size: cover;
 
   &__container {
-    width: 40%;
-    min-width: 320px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +35,7 @@
 
   &__paragraph {
     padding-top: 40px;
+    font: $primary-font;
     font-size: 38px;
     color: #ffffff;
     text-align: center;
