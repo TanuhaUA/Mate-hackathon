@@ -18,7 +18,7 @@ class ContactPage extends React.Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({[name]: value}, () => { this.validateField(name, value)});
-  }
+  };
 
   validateField(fieldName, value) {
     const fieldValidationErrors = this.state.formErrors;
