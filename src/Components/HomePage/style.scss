@@ -3,15 +3,16 @@
 .home {
   position: relative;
   height: auto;
-  padding: 5rem 0;
+  padding: 5rem 5px;
   background-image: url(./img/home.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   &__content {
-    margin: auto;
+    margin: 0 auto;
     max-width: 113rem;
+    width: 100%;
   }
 
   &__logo {
@@ -37,11 +38,23 @@
   }
 
   &__icon-box {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
     min-height: 28rem;
+
+    @media screen and(max-width: 1024px){
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 50rem;
+    }
+    @media screen and(max-width: 575px){
+      width: 28rem;
+
+    }
+
   }
 
   &__icon {
@@ -53,15 +66,22 @@
     border-radius: 50%;
     transition: all .3s;
 
+    @media screen and(max-width: 575px){
+      margin-bottom: 2rem;
+    }
     &:hover {
       background-color: rgba($secondary-color, 0.9);
       border: 3px solid transparent;
-
     }
 
     &:nth-child(3),
     &:nth-child(4) {
       align-self: flex-start;
+      @media screen and(max-width: 1024px){
+        align-self: flex-end;
+
+      }
+
     }
 
     &-text {
