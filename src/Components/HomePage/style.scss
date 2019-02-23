@@ -6,8 +6,20 @@
   background-size: cover;
 
   &__icon {
+    display: flex;
     width: 10rem;
     height: 10rem;
     border:3px solid #fff;
+    border-radius: 50%;
+
+    &-text {
+      color: #fff;
+      margin: auto;
+      text-align: center;
+      padding: 5rem 0;
+      font-family: 'existence' , 'Lato', Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+    }
   }
 }
