@@ -5,16 +5,12 @@ $background-color: #ffffff;
 .header {
   padding: 7rem 0;
   background-color: $background-color;
-  clear: both;
-}
-
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
   width: 1130px;
 
@@ -23,12 +19,7 @@ $background-color: #ffffff;
   }
 }
 
-.logo {
-  float: left;
-}
-
 .menu {
-  float: right;
   width: 60%;
   font: $primary-font;
   text-transform: uppercase;
@@ -70,15 +61,19 @@ $background-color: #ffffff;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+  .content {
+    flex-flow: column;
+  }
+
   .logo {
-    display: none;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   .menu {
-    display: block;
+    margin: auto;
     width: auto;
-    float: none;
 
     &__items {
       justify-content: space-between;
@@ -87,6 +82,10 @@ $background-color: #ffffff;
 }
 
 @media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
   .menu__item {
     margin: 1rem 0;
     display: block;

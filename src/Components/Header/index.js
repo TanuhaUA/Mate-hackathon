@@ -6,7 +6,7 @@ import './style.scss';
 class Header extends React.Component {
   render() {
     return (
-      <header className="header clearfix">
+      <header className="header">
         <div className="content">
         <span className="content__item logo">
           <Logo color="#676767' fontSize='30px"/>
