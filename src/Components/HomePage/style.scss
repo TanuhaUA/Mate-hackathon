@@ -5,6 +5,19 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &__title {
+    font-family: 'existence', 'Lato', Arial, Helvetica, sans-serif;
+    color: #fff;
+
+    &--main {
+      font-size: 3rem;
+    }
+
+    &--sub {
+      font-size: 2rem;
+    }
+  }
+
   &__icon {
     display: flex;
     width: 10rem;
