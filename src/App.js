@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import OurTeam from './Components/OurTeam/index.js';
+import './Styles/main.scss';
+import Header from './Components/Header';
+import Routing from './Components/Routing';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Mate hackathon
-
-        <OurTeam />
+        <Header/>
+        <Routing/>        
       </div>
     );
   }
