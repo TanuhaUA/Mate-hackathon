@@ -9,7 +9,7 @@ import ContactPage from '../ContactPage';
 import PortfolioPage from '../PortfolioPage';
 import BlogPage from '../BlogPage';
 import Features from '../Features';
-
+import OurTeam from '../OurTeam';
 
 
 class Routing extends React.Component {
@@ -19,7 +19,7 @@ class Routing extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={AboutUs}/>
-          {/*<Route path="/team" component={OurTeam}/>*/}
+          <Route path="/team" component={OurTeam}/>
           <Route path="/services" component={OurSkills}/>
           <Route path="/portfolio" component={PortfolioPage}/>
           <Route path="/blog" component={BlogPage}/>

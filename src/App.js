@@ -3,8 +3,6 @@ import './Styles/main.scss';
 import Header from './Components/Header';
 import Routing from './Components/Routing';
 
-
-
 class App extends Component {
   render() {
     return (
