@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './style.scss';
 import PPImagesItem from '../PPImagesItem';
 import Title from '../Title';
@@ -49,15 +49,14 @@ class PortfolioPage extends React.Component {
       } else if (type === 'ALL') {
         filteredArray = this.state.data;
       }
+      return filteredArray;
     });
     this.setState({filteredData: filteredArray, pressedTab: type});
-    console.log(this.state.filteredData);
   }
 
 
 
   render() {
-    console.log( this.state.pressedTab);
     const tabsNameArray = [];
     const {data: dataArray, currentAmountOnPage} = this.state;
     dataArray.forEach((dataArrayItem) => {
