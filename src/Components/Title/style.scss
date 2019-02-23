@@ -1,4 +1,4 @@
-@import './../../Styles/var';
+@import '../../Styles/var';
 
 .title {
   position: relative;
@@ -32,7 +32,7 @@
   &::after {
     top: 0;
     right: 0;
-    border-left: 1px;
-    border-bottom: 1px;
+    border-left: 0.1rem;
+    border-bottom: 0.1rem;
   }
 }
