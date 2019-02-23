@@ -15,8 +15,8 @@
 
   &::before, &::after {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     display: block;
     content: '';
     border: solid $secondary-color;

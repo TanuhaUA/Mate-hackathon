@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './style.scss';
 import Title from './../Title'
 
-class Index extends Component {
+class OurSkills extends Component {
   // constructor() {
   //   super();
   // }
@@ -16,4 +16,4 @@ class Index extends Component {
   }
 }
 
-export default Index
+export default OurSkills;
