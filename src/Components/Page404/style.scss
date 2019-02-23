@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
-@import "../../Styles/var";
+@import '../../Styles/var';
 
 .error-container {
   text-align: center;
@@ -46,7 +46,7 @@
 .error-container > span:nth-of-type(2):before,
 .error-container > span:nth-of-type(2):after {
   border-radius: 0%;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
