@@ -6,13 +6,14 @@ import AboutUs from '../AboutUs';
 import Page404 from '../Page404';
 import ContactPage from '../ContactPage';
 import PortfolioPage from '../PortfolioPage';
+import Features from '../Features';
 
 class Routing extends React.Component {
   render() {
     return (
       <main>
         <Switch>
-          {/*<Route exact path="/" component={HomePage}/>*/}
+          <Route exact path="/" component={Features}/>
           <Route path="/about" component={AboutUs}/>
           {/*<Route path="/team" component={OurTeam}/>*/}
           <Route path="/services" component={OurSkills}/>
