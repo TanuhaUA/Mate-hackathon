@@ -37,13 +37,14 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
     height: 28rem;
   }
 
   &__icon {
     position: relative;
     display: inline-block;
-    width: 13rem;
+    flex-basis: 13rem;
     height: 13rem;
     border: 3px solid #fff;
     border-radius: 50%;
@@ -75,3 +76,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
