@@ -24,13 +24,13 @@ class ContactPage extends React.Component {
     const fieldValidationErrors = this.state.formErrors;
     let emailValid = this.state.emailValid;
     
-  switch(fieldName) {
-    case 'email':
-      emailValid = value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i);
-    break;
-    default:
-    break;
-  }
+    switch(fieldName) {
+      case 'email':
+        emailValid = value.match(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i);
+      break;
+      default:
+      break;
+    }
 
     this.setState({formErrors: fieldValidationErrors,
       emailValid: emailValid,
